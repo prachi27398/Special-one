@@ -8,13 +8,23 @@
 }
 
 *{ box-sizing:border-box; }
-html,body{ height:100%; margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+html, body {
+  height: auto;
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
 
 .page{
   min-height:100vh;
   position:relative;
   overflow-x: hidden;
-  overflow-y: auto;
   padding:22px;
   color:var(--text);
   background:
@@ -362,4 +372,9 @@ html,body{ height:100%; margin:0; font-family: system-ui, -apple-system, Segoe U
 @media (min-width: 820px){
   .row{ grid-template-columns: 0.9fr 1.1fr; }
   .grid{ grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 420px){
+  .page { padding: 12px; }
+  .hero { padding-top: 8px; }
 }
