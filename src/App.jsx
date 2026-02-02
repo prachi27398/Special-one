@@ -53,7 +53,7 @@ export default function App() {
 
   function spawnSparkles() {
     const now = Date.now();
-    const items = Array.from({ length: 18 }).map((_, i) => ({
+    const items = Array.from({ length: 10 }).map((_, i) => ({
       id: `${now}-${i}`,
       left: Math.random() * 100,
       delay: Math.random() * 0.6,
