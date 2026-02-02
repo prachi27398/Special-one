@@ -213,7 +213,7 @@ export default function App() {
         </section>
 
         <footer className="footer">
-          Open on phone • Share the link • Make a memory ❤️
+         Prachi ❤️ Paras
         </footer>
       </main>
     </div>
